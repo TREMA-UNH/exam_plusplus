@@ -76,13 +76,21 @@ Input filed with system responses: `benchmarkY3test-qrels-runs-with-text.jsonl.g
 
 # Scripts
 
-First obtain the workbench software
+In order to reproduce the leaderboard and leaderboard correlation results:
 
-Create directory ./data/car/
+1. First obtain the workbench software
 
-Download respective file above.
+2. Create directory `./data/car/`
 
-Place trec runfiles in a directory `data/car/carruns`
+3. Download respective graded file above.
+
+4. Obtain trec runfiles and place in directory `data/car/carruns` (not needed for EXAM-cover)
+
+5. For Manual EXAM, obtain the TQA collection <https://allenai.org/data/tqa> (use `--question-set tqa`)
+
+6. For EXAM++, obtain the generated questions from this repository `phase1-data/car-questions.jsonl.gz`, then use `--question-set question-bank`)
+
+
 
 **Leaderboard correlation results**
 
